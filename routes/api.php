@@ -14,6 +14,7 @@ use App\Person;
 |
 */
 
-Route::get('/person/{person}',function(Person $person){
+Route::get('/personس/{person}',function(Person $person){
     return $person;
 });
+Route::apiResource('/person','personController');
